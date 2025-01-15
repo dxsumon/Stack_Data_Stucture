@@ -45,7 +45,7 @@ public:
             tail = NULL;
         }
     }
-    int font()
+    int front()
     {
         return head->val;
     }
@@ -61,6 +61,7 @@ public:
 
 int main()
 {
+    using namespace std;
     int n;
     cin>>n;
     myQueue queue;
@@ -73,7 +74,7 @@ int main()
 
     while(!queue.empty())
     {
-        cout<<queue.font()<<endl;
+        cout<<queue.front()<<endl;
         queue.pop();
     }
     
